@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<TITLE>Pagina di Login</TITLE></head>
+<body>
+<body style="background-color:lightskyblue">
+<font face="Arial Narrow" size="">
+<h1 align="center"><i>Il seguente contenuto è protetto da Password:</i></h1>
+  
+  <script>   <!-- blocco tasto destro del mouse -->
+  function blocco_mousedx()
+   { return(false); }
+  document.oncontextmenu = blocco_mousedx;
+</script>
+
+<script> <!-- blocco scorciatoie da tastiera -->
+ document.onkeydown = function(blocco_tasti) {
+  if(event.keyCode == 123) 
+{ return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'I'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'C'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == 'J'.charCodeAt(0)) { return false; }
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'U'.charCodeAt(0)) { return false; } 
+  if(blocco_tasti.ctrlKey && blocco_tasti.keyCode == 'S'.charCodeAt(0)) 
+{ return false; } 
+}
+</script>
+
+<!--  <script language="JavaScript">
+function AreaProtetta() {
+  location.href = document.getElementById('monos1').value + ".html";
+}
+</script> -->
+
+<!-- <script type="text/javascript">
+	alert("ERRORE: Non hai inserito nessuna Password.")
+</script> -->
+
+<script language="javascript" type="text/javascript">
+<!--
+function convalidaForm(passwordForm) {
+if (passwordForm.password.value == "") {
+alert("Devi inserire una password!")
+passwordForm.password.focus()
+return false
+}
+<!-- if (passwordForm.password.value != "") { -->
+<!-- alert("La passord inserita è errata!") -->
+<!-- passwordForm.password.focus() -->
+<!-- passwordForm.password.select() -->
+<!-- return false -->
+<!-- } -->
+if (passwordForm.password.value == "monos1") {
+alert("La password inserita è giusta!")
+window.open("monos1.html","_blank");
+}
+return false
+}
+
+-->
+</script>
+  
+ 
+	<form onsubmit="return convalidaForm(this)" action="" align="center">
+<h3  align="center">Inserisci la Password: </h3><input type="password" name="password">
+<p  align="center"><input type="submit" value="Invia"> <input type="reset" passwordForm.password.del()></p>
+</form>
+
+<!-- <h3 align="center"><i><b>Inserisci la password per continuare:</i></b></h3>
+<p align="center">
+<input type="password" id="monos1" name="monos1" required;></p>
+<p align="center">
+<input type="button" value="Entra!" onclick=AreaProtetta();></p> -->
+
+<!-- <script type="text/javascript" >
+if(input id && name == 'monos1') {button.onclick=AreaProtetta()}
+else {button.onclick=alert("ERRORE: Password Errata.")}
+}
+</script> -->
+
+<!-- <script language="javascript" type="text/javascript">
+<!--
+function convalidaForm(passwordForm) {
+if (passwordForm.password.value == "") {
+alert("Devi inserire una password!")
+passwordForm.password.focus()
+return false
+}
+if (passwordForm.password.value != "monos1") {
+alert("La passord inserita non è corretta!")
+passwordForm.password.focus()
+passwordForm.password.select()
+return false
+}
+return true
+}
+
+
+</script> -->
+<br>
+<b><i><p align="center">Copyright © toor10 2024 - Sito attivo dal 2 Gen. 2024<br>Tutti i diritti sono riservati.</p></b></i>
+
+</body>
+</html>
